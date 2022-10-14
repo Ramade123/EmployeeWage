@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class Main {
 	public static void display() {
 		System.out.println("\nWelcome to EmployeeWage"); 
-		System.out.println("1.EmpAttendance\n2.Emp Wage");
+		System.out.println("1.EmpAttendance\n2.Emp Wage\n3.PartTime Wage");
 		System.out.println("Enter your choice");
 		Scanner sc = new Scanner(System.in);
 		int choice=sc.nextInt();
@@ -14,6 +14,10 @@ public class Main {
 			break;
 		case 2:EmpWage wage=new EmpWage();
 		wage.DailyWage();
+		display();
+			break;
+		case 3:PartTime Part=new PartTime();
+		Part.PartTimeWage();
 		display();
 			break;
 		}

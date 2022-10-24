@@ -1,9 +1,10 @@
 import java.util.Scanner;
 
-public class Main {
+public class Main
+{
 	public static void display() {
 		System.out.println("\nWelcome to EmployeeWage"); 
-		System.out.println("1.EmpAttendance\n2.Emp Wage\n3.PartTime Wage");
+		System.out.println("1.EmpAttendance\n2.Emp Wage\n3.PartTime Wage\n4.Employee Wage using switch case");
 		System.out.println("Enter your choice");
 		Scanner sc = new Scanner(System.in);
 		int choice=sc.nextInt();
@@ -20,6 +21,9 @@ public class Main {
 		Part.PartTimeWage();
 		display();
 			break;
+		case 4:EmployeeWage EmpUC4=new EmployeeWage();
+		EmpUC4.EmpWage();
+		break;
 		}
 	}            
 

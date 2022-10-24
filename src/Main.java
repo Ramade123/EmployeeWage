@@ -4,7 +4,7 @@ public class Main
 {
 	public static void display() {
 		System.out.println("\nWelcome to EmployeeWage"); 
-		System.out.println("1.EmpAttendance\n2.Emp Wage\n3.PartTime Wage\n4.Employee Wage using switch case");
+		System.out.println("1.EmpAttendance\n2.Emp Wage\n3.PartTime Wage\n4.Employee Wage using switch case\n5.Employee wage for month");
 		System.out.println("Enter your choice");
 		Scanner sc = new Scanner(System.in);
 		int choice=sc.nextInt();
@@ -24,6 +24,9 @@ public class Main
 		case 4:EmployeeWage EmpUC4=new EmployeeWage();
 		EmpUC4.EmpWage();
 		break;
+		case 5:EmpWageForMonth UC5=new EmpWageForMonth();
+		UC5.WageForMonth();
+			break;
 		}
 	}            
 
